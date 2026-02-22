@@ -44,7 +44,7 @@ Vad är nytt i 3.1.7 jämfört med 3.1.5 :
 - Utökad on-time-logik med stöd för expired och delayed
   
 Övrig funktionalitet är oförändrad och bygger på 3.1.5.
-Fullständig ändringshistorik finns i CHANGELOG.md.
+Fullständig ändringshistorik finns i [CHANGELOG.md](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/CHANGELOG.md).
 
 Det är möjligt att köra 3.1.5 och 3.1.7 parallellt på olika enheter.
 
@@ -168,16 +168,6 @@ Se detaljer i [CHANGELOG.md](https://github.com/Soviet9773Red/shelly-elprisSE/bl
 
 ------------------------------------------------------------------------
 
-### Källkod och byggsystem
-
-För närvarande är källkoden, relaterade projekt samt bygg- och npm-baserad arbetsmiljö
-inte publikt tillgängliga. Vid intresse för fork, anpassningar eller vidareutveckling kan dessa göras tillgängliga vid behov.    
-Kontakta mig gärna via GitHub Issues eller via projektets kontaktytor.
-
-Skriptet utvecklat av [@Soviet9773Red](https://github.com/Soviet9773Red) med stort tack till [Jussi Isotalo](https://github.com/jisotalo) för originalkoden och [Mikael Ulvesjo](https://github.com/MikaelUlvesjo) för idéer kring JSON-optimering.
-
----
-
 ### Visuell översikt shelly-device-map, valfritt
 
 Om detta skript används på flera Shelly-enheter kan det vara praktiskt att komplettera med en enkel visuell översikt.
@@ -186,7 +176,18 @@ Projektet **[shelly-device-map](https://github.com/Soviet9773Red/shelly-device-m
 
 Shelly Device Map [demo](https://soviet9773red.github.io/shelly-device-map/) är helt statisk, kräver ingen backend och kan öppnas lokalt eller köras på till exempel en Raspberry Pi.
 
----
+------------------------------------------------------------------------
+
+### Källkod och byggsystem
+
+För närvarande är källkoden, relaterade projekt samt bygg- och npm-baserad arbetsmiljö
+inte publikt tillgängliga. Vid intresse för fork, anpassningar eller vidareutveckling kan dessa göras tillgängliga vid behov.    
+Kontakta mig gärna via GitHub Issues eller via projektets kontaktytor.
+
+Skriptet utvecklat av [@Soviet9773Red](https://github.com/Soviet9773Red) med stort tack till [Jussi Isotalo](https://github.com/jisotalo) för originalkoden och [Mikael Ulvesjo](https://github.com/MikaelUlvesjo) för idéer kring JSON-optimering.
+
+------------------------------------------------------------------------
+
 ### 🔧 → [Felsökning](./Felsokning.md)
 
 ## Stöd projektet
