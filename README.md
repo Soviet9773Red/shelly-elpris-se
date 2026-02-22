@@ -57,7 +57,7 @@ Det är möjligt att köra 3.1.5 och 3.1.7 parallellt på olika enheter.
    
 4. Öppna Scripts i Shelly Web UI, skapa ett nytt script och klistra in den senaste [3.1.7] versionen av [shelly-elprisSE.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/shelly-elprisSE.js).  
 
-<img src="https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/img/console.jpg?raw=true" width="427"
+<img src="https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/img/console.jpg?raw=true" width="426"
   align="right"
      style="margin-right:15px; margin-bottom:10px;">
 
