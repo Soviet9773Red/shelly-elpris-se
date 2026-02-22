@@ -152,7 +152,7 @@ för att dynamiskt justera antalet billigaste timmar.
 Addonet finns i katalogen: /addons/[ht-sensor-addon.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/addons/README.md)
 
 ## 📢 Kvartspriser från API
-Från och med **1 oktober 2025** levererar [elprisetjustnu.se](https://www.elprisetjustnu.se/) priser i **15-minutersintervall** (96 datapunkter per dygn) i stället för 24 timpriser. Det innebär att de tidigare versionerna inte längre fungerar. Den nya versionen **shelly-elprisSE (3.1.5)** är anpassad till det nya formatet.  
+Från och med **1 oktober 2025** levererar [elprisetjustnu.se](https://www.elprisetjustnu.se/) priser i **15-minutersintervall** (96 datapunkter per dygn) i stället för 24 timpriser. Det innebär att de tidigare versionerna inte längre fungerar. Den nya versionen **shelly-elprisSE** är anpassad till det nya formatet.  
 För att Shelly-enheter med begränsat minne ska kunna hantera informationen aggregerar API:t automatiskt 96 kvarts till 24 hela timmar.  
 Detta är en **övergångslösning**. Utvecklingen fortsätter för att i framtiden stödja 96-intervall mer direkt.
 
