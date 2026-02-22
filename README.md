@@ -61,7 +61,7 @@ Det är möjligt att köra 3.1.5 och 3.1.7 parallellt på olika enheter.
   align="right"
      style="margin-right:15px; margin-bottom:10px;">
 
-5. Namnge skriptet till *shelly-elprisSE* och klicka på `Save → Start`.
+5. Namnge skriptet till *shelly-elpris* och klicka på `Save → Start`.
    
 
 6. I konsolen (Console) visas informationsmeddelanden samt skriptets HTTP-adress, till exempel: 
