@@ -197,7 +197,7 @@ Nu hämtas färdigbehandlade filer **day0.json** (idag) och **day1.json** (imorg
 
 **Första svenska testanpassade versionen av shelly-porssisahko för SE1–SE4.**
 
-#### 🚧 Förändringar jämfört med original (jisotalo):
+#### 🚧 Förändringar jämfört med original Jussi Isotalo [shelly Porssisahko v3.1.1](https://github.com/jisotalo/shelly-porssisahko-en/releases/tag/v.3.1.1):
 - API-adress ändrad från `elering.ee (.csv)` till `elprisetjustnu.se (.json)`.
 - Funktionerna `bldU()` och `pTimeL()` introducerades för svensk JSON-struktur.
 - Stöd för elområden SE1–SE4. Baltikum och Finland togs bort.
