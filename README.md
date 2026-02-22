@@ -57,11 +57,11 @@ Det är möjligt att köra 3.1.5 och 3.1.7 parallellt på olika enheter.
    
 4. Öppna Scripts i Shelly Web UI, skapa ett nytt script och klistra in den senaste [3.1.7] versionen av [shelly-elprisSE.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/shelly-elprisSE.js).  
 
-<img src="https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/img/console.jpg?raw=true" width="426"
+<img src="https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/img/console.jpg?raw=true" width="427"
   align="right"
      style="margin-right:15px; margin-bottom:10px;">
 
-5. Namnge skriptet till *shelly-elprisSE* och klicka på Save → Start.
+5. Namnge skriptet till *shelly-elprisSE* och klicka på `Save → Start`.
    
 
 6. I konsolen (Console) visas informationsmeddelanden samt skriptets HTTP-adress, till exempel: 
@@ -110,10 +110,11 @@ Rekommenderat - Clean start. Detta är det säkraste alternativet:
 2. Installera 3.1.7.
 3. Konfigurera om via Setup.
 
-Alternativ - migreringsscript [migrate_315_to_317.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/migrate_315_to_317.js) <br>
-Om befintliga inställningar ska bevaras kan scriptet användas.
 
-Scriptet:
+Alternativ - migreringsscript<br>
+Om befintliga KVS inställningar ska bevaras kan scriptet användas.
+
+Scriptet [migrate_315_to_317.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/migrate_315_to_317.js) :
 
 1. Byter namn på äldre fält (t.ex. day → d, night → n).
 2. Lägger till nya strukturer (m0, m1, m2).
@@ -148,14 +149,11 @@ Ett tillval i form av ett addon-skript kan användas tillsammans med *shelly-elp
 Addon-skriptet laddas efter huvudskriptet och använder temperaturdata från en Shelly H&T-sensor
 för att dynamiskt justera antalet billigaste timmar.
 
-Addonet finns i katalogen:
-shelly-elprisSE/addons/[ht-sensor-addon.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/addons/README.md)
+Addonet finns i katalogen: /addons/[ht-sensor-addon.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/addons/README.md)
 
 ## 📢 Kvartspriser från API
-Från och med **1 oktober 2025** levererar [elprisetjustnu.se](https://www.elprisetjustnu.se/) priser i **15-minutersintervall (96 datapunkter per dygn)** i stället för 24 timpriser.  
-Det innebär att de tidigare versionerna inte längre fungerar.  
-Den nya versionen **shelly-elprisSE (3.1.5)** är anpassad till det nya formatet.  
-För att Shelly-enheter med begränsat minne ska kunna hantera informationen aggregerar API:t automatiskt 96 kvartstimmar till 24 hela timmar.  
+Från och med **1 oktober 2025** levererar [elprisetjustnu.se](https://www.elprisetjustnu.se/) priser i **15-minutersintervall** (96 datapunkter per dygn) i stället för 24 timpriser. Det innebär att de tidigare versionerna inte längre fungerar. Den nya versionen **shelly-elprisSE (3.1.5)** är anpassad till det nya formatet.  
+För att Shelly-enheter med begränsat minne ska kunna hantera informationen aggregerar API:t automatiskt 96 kvarts till 24 hela timmar.  
 Detta är en **övergångslösning**. Utvecklingen fortsätter för att i framtiden stödja 96-intervall mer direkt.
 
 ## Huvudsakliga ändringar:
@@ -180,13 +178,13 @@ Skriptet utvecklat av [@Soviet9773Red](https://github.com/Soviet9773Red) med sto
 
 ---
 
-### Visuell översikt [shelly-device-map](https://github.com/Soviet9773Red/shelly-device-map) (valfritt)
+### Visuell översikt shelly-device-map, valfritt
 
 Om detta skript används på flera Shelly-enheter kan det vara praktiskt att komplettera med en enkel visuell översikt.
 
 Projektet **[shelly-device-map](https://github.com/Soviet9773Red/shelly-device-map)** erbjuder en lättviktig, statisk HTML-sida där enheter kan placeras på en planritning och länkas via sina lokala IP-adresser. Det ger snabb och tydlig åtkomst till Shelly Web UI, körande skript och status-endpoints från en och samma vy.
 
-Shelly Device Map ([demo](https://soviet9773red.github.io/shelly-device-map/)) är helt statisk, kräver ingen backend och kan öppnas lokalt eller köras på till exempel en Raspberry Pi.
+Shelly Device Map [demo](https://soviet9773red.github.io/shelly-device-map/) är helt statisk, kräver ingen backend och kan öppnas lokalt eller köras på till exempel en Raspberry Pi.
 
 ---
 ### 🔧 → [Felsökning](./Felsokning.md)
