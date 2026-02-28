@@ -128,7 +128,7 @@ Migreringsscriptet körs en gång och kan därefter tas bort.
 ### Exempel på huvudgränssnitt
 Här är en illustration av UI (status):
 <table><tr>
-<td><img src="https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/img/statp.jpg" width="521"></td>
+<td><img src="https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/img/statp.jpg" width="524"></td>
 </tr></table>
 
 ### **Gränssnitt och flikar**
