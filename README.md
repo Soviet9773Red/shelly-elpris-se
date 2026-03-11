@@ -114,7 +114,7 @@ Rekommenderat - Clean start. Detta är det säkraste alternativet:
 Alternativ - migreringsscript<br>
 Om befintliga KVS inställningar ska bevaras kan scriptet användas.
 
-Scriptet [migrate_315_to_317.js](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/migrate_315_to_317.js) :
+Scriptet [migrate_315_to_318.js](https://github.com/Soviet9773Red/shelly-elpris-se/blob/main/migrate_315_to_318.js) :
 
 1. Byter namn på äldre fält (t.ex. day → d, night → n).
 2. Lägger till nya strukturer (m0, m1, m2).
