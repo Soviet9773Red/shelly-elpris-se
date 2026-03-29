@@ -1,6 +1,6 @@
 /* 
   shelly-elprisSE
-  Migration script: 3.1.5 -> 3.1.8
+  Migration script: 3.1.5 -> 3.1.7+
   Run once, then remove.
 */
 
@@ -9,7 +9,7 @@ let DRY_RUN = false;
 let SCRIPT_ID = Shelly.getCurrentScriptId();
 
 function log(msg) {
-  console.log("[KVS 3.1.5 to 3.1.8] " + msg);
+  console.log("[KVS 3.1.5 to 3.1.7+] " + msg);
 }
 function stopScript() {
   log("Stopping migration script: #" + SCRIPT_ID);
@@ -92,7 +92,7 @@ function processNext() {
 
 	if (current >= keys.length) {
 		(totalChanges === 0) ?
-		  log("No migration required. All keys already match 3.1.8 schema.") :
+		  log("No migration required. All keys already match 3.1.7+ schema.") :
 		  log("Migration completed. Modified keys: " + totalChanges + ", fields: " + modifiedFields);
 	  Timer.set(500, false, stopScript);
 	  return;
