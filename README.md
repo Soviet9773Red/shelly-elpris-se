@@ -28,16 +28,16 @@
 
 Två stabila versioner finns tillgängliga:
 
--   [**shelly-elpris 3.1.8**](https://github.com/Soviet9773Red/shelly-elpris-se/blob/main/shelly-elpris-se.js) -- (senaste) utökad funktionalitet och uppdaterad KVS-struktur
+-   [**shelly-elpris 3.1.9**](https://github.com/Soviet9773Red/shelly-elpris-se/blob/main/shelly-elpris-se.js) -- (senaste) utökad funktionalitet och uppdaterad KVS-struktur
 -   [**shelly-elpris 3.1.5**](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/shelly-elprisSE-3.1.5.js) -- tidigare stabil version, fullt fungerande
 
 Version 3.1.5 behöver inte uppgraderas om befintlig installation
 fungerar som önskat.<br>
-Version 3.1.8 är avsedd för användare som vill
+Version 3.1.9 är avsedd för användare som vill
 använda den nya funktionaliteten.<br>
 Observera att versionerna använder olika KVS-strukturer.
 
-Vad är nytt i 3.1.8 jämfört med 3.1.5 :
+Vad är nytt i 3.1.9 jämfört med 3.1.5 :
 - Möjlighet att specificera dagtimmar för nätavgift (tf)
 - Möjlighet att aktivera / inaktivera konfigurationer beroende på veckodag
 - Färgkodad visualisering av elpriser för tydligare översikt
@@ -46,7 +46,7 @@ Vad är nytt i 3.1.8 jämfört med 3.1.5 :
 Övrig funktionalitet är oförändrad och bygger på 3.1.5.
 Fullständig ändringshistorik finns i [CHANGELOG.md](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/CHANGELOG.md).
 
-Det är möjligt att köra 3.1.5 och 3.1.8 parallellt på olika enheter.
+Det är möjligt att köra 3.1.5 och 3.1.9 parallellt på olika enheter.
 
 ------------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ Det är möjligt att köra 3.1.5 och 3.1.8 parallellt på olika enheter.
 2. Uppgradera firmware till senaste **stable** version ≥ 1.7.1.  
 3. Välj tidszon: **Europe/Stockholm** (viktigt för korrekt prislogik).
    
-4. Öppna Scripts i Shelly Web UI, skapa ett nytt script och klistra in den senaste [3.1.8] versionen av [shelly-elpris-se](https://github.com/Soviet9773Red/shelly-elpris-se/blob/main/shelly-elpris-se.js).  
+4. Öppna Scripts i Shelly Web UI, skapa ett nytt script och klistra in den senaste [3.1.9] versionen av [shelly-elpris-se](https://github.com/Soviet9773Red/shelly-elpris-se/blob/main/shelly-elpris-se.js).  
 
 <img src="https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/img/console.jpg?raw=true" width="426"
   align="right"
@@ -68,7 +68,7 @@ Det är möjligt att köra 3.1.5 och 3.1.8 parallellt på olika enheter.
 
 ```
 elpris-SE: Starting...
-elpris-SE: Core v.3.1.8 | API: 15:25 (random minute)
+elpris-SE: Core v.3.1.9 | API: 15:25 (random minute)
 elpris-SE: http://192.168.8.164/script/1
 elpris-SE: Time synced, updating prices
 elpris-SE: API returned 24×1h averaged intervals, day 11.03.2026
@@ -98,16 +98,16 @@ Observera att siffran efter script/ visar skriptnumret och kan variera, till exe
 
 **Viktigt - KVS**
 
-KVS-strukturen har ändrats i version 3.1.8 och konfiguration **#3** har tagits bort.  
+KVS-strukturen har ändrats i version 3.1.9 och konfiguration **#3** har tagits bort.  
 Gamla KVS-nycklar från 3.1.5 är inte kompatibla och bör tas bort innan den nya versionen startas.
 
-Version 3.1.5 och 3.1.8 ska inte köras samtidigt på samma enhet, eftersom de använder olika KVS-strukturer.  
+Version 3.1.5 och 3.1.9 ska inte köras samtidigt på samma enhet, eftersom de använder olika KVS-strukturer.  
 På separata Shelly-enheter är detta inget problem.
 
 Rekommenderat - Clean start. Detta är det säkraste alternativet:
 
 1. Ta bort gamla KVS-nycklar.
-2. Installera 3.1.8
+2. Installera 3.1.9
 3. Konfigurera om via Setup.
 
 
