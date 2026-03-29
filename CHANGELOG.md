@@ -2,6 +2,36 @@
 
 Här dokumenteras ändringar mellan olika versioner av skriptet `shelly-elprisSE`, från release candidate till stabila utgåvor.
 
+## Version [3.1.9](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/shelly-elprisSE.js) (2026-03-29)
+
+**Shelly-elprisSE 3.1.9 Release Notes**
+
+**Höjdpunkter**  
+🕒 Korrekt hantering av sommar-/vintertid (DST) med stöd för 23- och 25-timmarsdygn.<br>
+🌡️ Visning av enhetens temperatur, WiFi-signal och script-minne i Status.<br>
+📱 Förbättrad layout i Setup för bättre kompatibilitet med iPad och Android.<br>
+🎯 Tydligare visning av saknade timmar (DST) genom "skipped" i Status.<br>
+
+### Funktionalitet i version 3.1.9
+
+- Ny DST-logik i kärnan:  
+  - 23 timmar → saknad timme hanteras korrekt (02:00 visas som "skipped")  
+  - 25 timmar → dubblerad timme slås ihop (lägsta pris används)  
+- Borttagning av beroende till `Date` för indexering av timmar (ökad stabilitet i Shelly runtime)  
+- Förbättrad robusthet i visning av prisdata (skydd mot null/undefined)  
+- Utökad Status-vy med:
+  - temperatur (inkl. maxvärde)
+  - WiFi RSSI
+  - script memory peak  
+- Förbättrad responsiv design i Setup (mobil / surfplatta)  
+- Mindre interna förbättringar och refaktorering av UI-komponenter  
+
+### Noteringar
+
+- DST-hanteringen är nu helt deterministisk och oberoende av API:ets tidszon (`t0`).  
+- Saknade timmar visas explicit i UI istället för att ersättas med felaktiga värden.  
+
+
 ## Version [3.1.7](https://github.com/Soviet9773Red/shelly-elprisSE/blob/main/shelly-elprisSE.js) (2026-02-20)
 
 **Shelly-elprisSE 3.1.7 Release Notes**
